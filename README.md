@@ -1,5 +1,9 @@
 # React + TypeScript + Vite
 
+npm install
+npm run build
+npm run deploy <- deploy to git gh-pages, package npm install gh-pages --save-dev
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
