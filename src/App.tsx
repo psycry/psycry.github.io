@@ -17,7 +17,12 @@ function App() {
       {/*  </a>*/}
       {/*</div>*/}
       <h1>Digital Nomad LLC</h1>
-        <a href = "https://play.google.com/store/apps/details?id=com.psycry.nomad_nexus">Nomad Nexus on Google Play</a>
+        <a href = "https://play.google.com/store/apps/details?id=com.psycry.nomad_nexus">
+            <p>
+                <img src="/nomad_nexus.png" className="logo nomad_nexus" alt="Nomad Nexus logo" /><br />
+                Nomad Nexus on Google Play
+            </p>
+        </a>
       {/*<div className="card">*/}
       {/*  <button onClick={() => setCount((count) => count + 1)}>*/}
       {/*    count is {count}*/}
