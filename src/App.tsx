@@ -23,11 +23,11 @@ function App() {
                 <br />
                 Nomad Nexus on Google Play
             </p>
-            <p>
-                Not supported? <br />
-                <a href = "https://nomadnexus-77758.web.app/">Try our web version</a>
-            </p>
         </a>
+        <p>
+            Not supported? <br />
+            <a href = "https://nomadnexus-77758.web.app/">Try our web version</a>
+        </p>
       {/*<div className="card">*/}
       {/*  <button onClick={() => setCount((count) => count + 1)}>*/}
       {/*    count is {count}*/}
