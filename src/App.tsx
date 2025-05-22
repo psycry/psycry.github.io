@@ -17,7 +17,7 @@ function App() {
       {/*  </a>*/}
       {/*</div>*/}
       <h1>Digital Nomad LLC</h1>
-        <a href = "https://play.google.com/store/apps/details?id=com.psycry.nomad_nexus">
+        <a href = "https://play.google.com/store/apps/details?id=com.psycry.nomad_nexus" target="_blank" rel="noopener noreferrer">
             <p>
                 <img src="/nomad_nexus.png" className="logo nomad_nexus" alt="Nomad Nexus logo" />
                 <br />
@@ -26,7 +26,7 @@ function App() {
         </a>
         <p>
             Not supported? <br />
-            <a href = "https://nomadnexus-77758.web.app/">Try our web version</a>
+            <a href = "https://nomadnexus-77758.web.app/" target="_blank" rel="noopener noreferrer">Try our web version</a>
         </p>
       {/*<div className="card">*/}
       {/*  <button onClick={() => setCount((count) => count + 1)}>*/}
