@@ -4,6 +4,24 @@ npm install
 npm run build
 npm run deploy <- deploy to git gh-pages, package npm install gh-pages --save-dev
 
+Looking into makeswift.com
+npx makeswift@latest
+
+npm install
+npm run dev
+Starts the development server.
+
+npm run build
+Builds the app for production.
+
+npm start
+Runs the built app in production mode.
+
+We suggest that you begin by typing:
+
+cd nomad-nexus
+npm run dev
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
