@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[15],{18015:(e,s,a)=>{a.r(s),a.d(s,{default:()=>d});var c=a(95155),r=a(24089),d=(0,a(12115).forwardRef)(({id:e,text:s,width:a,margin:d},f)=>(0,c.jsx)("div",{id:e,ref:f,className:(0,r.cx)(a,d),children:s}))}}]);
