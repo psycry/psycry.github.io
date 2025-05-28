@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[963],{21963:(e,t,r)=>{r.r(t),r.d(t,{default:()=>l});var s=r(95155),a=r(12115),o=r(36882),u=r(78514),n=r(64049);function l({children:e}){let t=(0,u.H)(),r=(0,a.useMemo)(()=>o.U1({name:"Host store",preloadedState:t.store.getState()}),[t]);return(0,s.jsx)(n.StoreContext.Provider,{value:r,children:e})}}}]);
