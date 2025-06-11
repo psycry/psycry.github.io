@@ -74,3 +74,79 @@ export default tseslint.config({
   },
 })
 ```
+
+# Digital Nomad LLC Website - Hacker Theme
+
+This is a React application for Digital Nomad LLC, featuring a modern "software hacker" aesthetic.
+
+## Project Structure
+
+The project follows a standard React application structure:
+
+* `public/`: Contains the `index.html` file and static assets (like your logo).
+* `src/`: Contains the React components and main application logic.
+    * `App.js`: The main React component for the website.
+    * `index.js`: The entry point for the React application.
+* `package.json`: Project metadata and dependencies.
+* `README.md`: This file.
+
+## Setup and Installation
+
+To run this project locally, follow these steps:
+
+1.  **Create a new directory** for your project and navigate into it:
+    ```bash
+    mkdir digital-nomad-hacker-site
+    cd digital-nomad-hacker-site
+    ```
+
+2.  **Create the `public` and `src` directories**:
+    ```bash
+    mkdir public src
+    ```
+
+3.  **Create the files** inside these directories and paste the respective code provided above:
+    * `public/index.html`
+    * `src/App.js`
+    * `src/index.js`
+    * `package.json`
+    * `README.md`
+
+4.  **Place your logo image**:
+    Save your `digitial_nomad_logo.png` file into the `public/` directory.
+
+5.  **Install dependencies**:
+    Open your terminal in the project's root directory (where `package.json` is located) and run:
+    ```bash
+    npm install
+    ```
+    or
+    ```bash
+    yarn install
+    ```
+
+6.  **Start the development server**:
+    Once dependencies are installed, you can start the application:
+    ```bash
+    npm start
+    ```
+    or
+    ```bash
+    yarn start
+    ```
+
+This will open the website in your browser, usually at `http://localhost:3000`.
+
+## Technologies Used
+
+* **React**: JavaScript library for building user interfaces.
+* **Tailwind CSS**: A utility-first CSS framework for rapid UI development.
+* **Lucide React**: For scalable vector icons.
+* **Google Fonts**: For the 'Space Mono' typeface.
+
+## Customization
+
+* **Content**: Edit `src/App.js` to change text, links, and sections.
+* **Styling**: Modify the Tailwind CSS classes within `App.js` or the custom CSS in `public/index.html` to further refine the look.
+* **Logo**: Ensure your `digitial_nomad_logo.png` is in the `public/` folder.
+
