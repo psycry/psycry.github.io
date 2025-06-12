@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Logo from './Logo';
 import NavLink from './NavLink';
 
@@ -15,9 +15,10 @@ const Header: React.FC<HeaderProps> = ({ currentPage, setCurrentPage }) => (
             </a>
             <nav className="hidden md:flex items-center space-x-8">
                 <NavLink page="home" currentPage={currentPage} setCurrentPage={setCurrentPage}>Home</NavLink>
-                <NavLink page="about" currentPage={currentPage} setCurrentPage={setCurrentPage}>Our Ethos</NavLink>
-                <NavLink page="services" currentPage={currentPage} setCurrentPage={setCurrentPage}>Launchpad</NavLink>
-                <NavLink page="contact" currentPage={currentPage} setCurrentPage={setCurrentPage}>Connect</NavLink>
+                <NavLink page="products" currentPage={currentPage} setCurrentPage={setCurrentPage}>Products</NavLink>
+                <NavLink page="services" currentPage={currentPage} setCurrentPage={setCurrentPage}>Services</NavLink>
+                <NavLink page="contact" currentPage={currentPage} setCurrentPage={setCurrentPage}>Contact</NavLink>
+                <NavLink page="about" currentPage={currentPage} setCurrentPage={setCurrentPage}>About</NavLink>
             </nav>
         </div>
     </header>

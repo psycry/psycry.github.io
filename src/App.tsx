@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import * as React from 'react';
+import { useState, useEffect } from 'react';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
+import ProductsPage from "@/pages/ProductsPage";
 
 const App: React.FC = () => {
     // Simple hash-based routing
@@ -31,6 +33,8 @@ const App: React.FC = () => {
                 return <ServicesPage />;
             case 'contact':
                 return <ContactPage />;
+            case 'products':
+                return <ProductsPage />;
             case 'home':
             default:
                 return <HomePage />;

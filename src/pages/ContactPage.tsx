@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import FAQItem from '../components/FAQItem';
 
 const ContactPage: React.FC = () => (
@@ -6,17 +6,17 @@ const ContactPage: React.FC = () => (
         <section className="py-12 bg-slate-800/50">
             <div className="container mx-auto px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold text-white">Connect</h1>
-                <p className="text-lg text-slate-400 mt-4 max-w-3xl mx-auto">Ready to start a project or just want to chat about life on the road? Drop us a line. We're always open.</p>
+                <p className="text-lg text-slate-400 mt-4 max-w-3xl mx-auto">Ready to start a project? Drop us a line.</p>
             </div>
         </section>
         <section className="py-20">
             <div className="container mx-auto px-6 grid md:grid-cols-5 gap-12">
                 <div className="md:col-span-2">
-                    <h3 className="text-2xl font-bold text-white mb-4">Contact Intel</h3>
-                    <p className="text-slate-400 mb-6">Use the form or transmit directly to our inbox. We monitor all channels, from all timezones.</p>
+                    <h3 className="text-2xl font-bold text-white mb-4">Contact Information</h3>
+                    <p className="text-slate-400 mb-6">Use the form or transmit directly to our inbox.</p>
                     <div className="space-y-4 text-slate-300">
-                        <p className="flex items-center"><span className="text-teal-400 mr-3 font-bold">Email:</span> connect@digitalnomad.llc</p>
-                        <p className="flex items-center"><span className="text-teal-400 mr-3 font-bold">Timezone:</span> Universal Coordinated Time (UTC)</p>
+                        <p className="flex items-center"><span className="text-teal-400 mr-3 font-bold">Email:</span> digitlnomadnexus@gmail.com</p>
+                        <p className="flex items-center"><span className="text-teal-400 mr-3 font-bold">Timezone:</span> Eastern Standard Time (EST)</p>
                     </div>
                     <div className="mt-8">
                         <h4 className="text-xl font-bold text-white mb-4">Common Transmissions</h4>
@@ -25,7 +25,7 @@ const ContactPage: React.FC = () => (
                                 <p>We partner with aspiring and current digital nomads, solopreneurs, freelancers, and small, remote-first companies who value freedom and intentionality.</p>
                             </FAQItem>
                             <FAQItem question="How do you handle projects across timezones?">
-                                <p>We live and breathe asynchronous communication. We use tools like Slack, Loom, and Notion to keep projects moving 24/7, with scheduled calls only when absolutely necessary. This maximizes deep work and respects everyone's schedule, wherever they are in the world.</p>
+                                <p>We live and breathe asynchronous communication. We use modern tools to keep projects moving 24/7, with scheduled calls only when absolutely necessary. This maximizes deep work and respects everyone's schedule, wherever they are in the world.</p>
                             </FAQItem>
                         </div>
                     </div>

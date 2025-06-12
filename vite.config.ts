@@ -4,6 +4,7 @@ import path from 'path';
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: './', // This is important for GitHub Pages
   plugins: [react()],
   resolve: {
     alias: {
@@ -17,7 +18,9 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     emptyOutDir: true,
-    sourcemap: true,
+    sourcemap: false, // Disable source maps for production
+    minify: 'terser',
+    target: 'esnext',
   },
   base: '/', // Base public path when served in production
 });

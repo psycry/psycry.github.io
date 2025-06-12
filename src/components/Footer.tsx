@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import Logo from './Logo';
 
 const Footer: React.FC = () => (
@@ -11,9 +11,10 @@ const Footer: React.FC = () => (
                 </div>
                 <div className="flex space-x-6 text-slate-400">
                     <a href="#home" className="hover:text-teal-400 transition-colors">Home</a>
-                    <a href="#about" className="hover:text-teal-400 transition-colors">Our Ethos</a>
-                    <a href="#services" className="hover:text-teal-400 transition-colors">Launchpad</a>
+                    <a href="#products" className="hover:text-teal-400 transition-colors">Products</a>
+                    <a href="#services" className="hover:text-teal-400 transition-colors">Services</a>
                     <a href="#contact" className="hover:text-teal-400 transition-colors">Connect</a>
+                    <a href="#about" className="hover:text-teal-400 transition-colors">About</a>
                 </div>
             </div>
             <div className="mt-10 border-t border-slate-700 pt-6 text-center text-slate-500 text-sm">
