@@ -25,6 +25,7 @@ const ProductsPage: React.FC = () => (
                 <h2 className="text-3xl font-bold text-slate-100 mb-12">Products</h2>
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
                     <div className="bg-slate-900 p-8 rounded-lg border border-slate-700 hover:border-purple-500 transition-all transform hover:-translate-y-2">
+                        <img src={"nomad_nexus_new_image.png"} alt="Nomad Nexus on Google Play" />
                         <h3 className="text-2xl font-bold text-white mb-4">Nomad Nexus</h3>
                         {/*<p className="text-slate-400 mb-6">From personal portfolios to automated business platforms, we build the custom technology that sets you free.</p>*/}
                         <a href="https://play.google.com/store/apps/details?id=com.psycry.nomad_nexus" target="_blank" rel="noopener noreferrer" className="font-semibold text-teal-400 hover:text-teal-300">Nomad Nexus on Google Play &rarr;</a>
