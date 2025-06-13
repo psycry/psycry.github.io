@@ -22,5 +22,4 @@ export default defineConfig({
     minify: 'terser',
     target: 'esnext',
   },
-  base: '/', // Base public path when served in production
 });
