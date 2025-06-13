@@ -1,5 +1,5 @@
 import * as React from 'react';
-import logoImage from '../../public/digitial_nomad_logo.png'; // Make sure the path to your logo is correct
+import logoImage from '../../public/digitial_nomad_logo_bright.png'; // Make sure the path to your logo is correct
 
 const Logo: React.FC = () => (
     <div className="flex items-center">
