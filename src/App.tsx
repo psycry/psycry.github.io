@@ -7,6 +7,7 @@ import AboutPage from './pages/AboutPage';
 import ServicesPage from './pages/ServicesPage';
 import ContactPage from './pages/ContactPage';
 import ProductsPage from "@/pages/ProductsPage";
+import ThankYouPage from "@/pages/ThankYouPage";
 
 const App: React.FC = () => {
     // Simple hash-based routing
@@ -26,6 +27,12 @@ const App: React.FC = () => {
     }, []);
 
     const renderPage = () => {
+        // Handle thank-you page
+        if (currentPage === 'thank-you') {
+            return <ThankYouPage />;
+        }
+        
+        // Handle other pages with hash-based routing
         switch (currentPage) {
             case 'about':
                 return <AboutPage />;

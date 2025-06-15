@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useState } from 'react';
 import FAQItem from '../components/FAQItem';
 
 const ContactPage: React.FC = () => (
@@ -32,24 +33,87 @@ const ContactPage: React.FC = () => (
                 </div>
                 <div className="md:col-span-3 bg-slate-800/50 p-8 rounded-lg border border-slate-700">
                     <h3 className="text-2xl font-bold text-white mb-6">Secure Transmission Form</h3>
-                    <form>
+                    <form 
+                        onSubmit={async (e) => {
+                            e.preventDefault();
+                            const form = e.currentTarget;
+                            const formData = new FormData(form);
+                            
+                            try {
+                                const response = await fetch('https://formspree.io/f/myzjjelg', {
+                                    method: 'POST',
+                                    body: formData,
+                                    headers: {
+                                        'Accept': 'application/json'
+                                    }
+                                });
+                                
+                                if (response.ok) {
+                                    // Redirect to thank you page on success
+                                    window.location.hash = 'thank-you';
+                                } else {
+                                    const data = await response.json();
+                                    if (data.errors) {
+                                        alert(data.errors.map((error: any) => error.message).join(', '));
+                                    } else {
+                                        alert('There was a problem submitting the form. Please try again.');
+                                    }
+                                }
+                            } catch (error) {
+                                console.error('Error:', error);
+                                alert('There was a problem submitting the form. Please try again.');
+                            }
+                        }}
+                        className="space-y-4"
+                    >
                         <div className="mb-4">
                             <label htmlFor="name" className="block text-slate-400 font-semibold mb-2">Callsign / Name</label>
-                            <input type="text" id="name" name="name" className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" required />
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" 
+                                required 
+                            />
                         </div>
                         <div className="mb-4">
                             <label htmlFor="email" className="block text-slate-400 font-semibold mb-2">Email Address</label>
-                            <input type="email" id="email" name="email" className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" required />
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" 
+                                required 
+                            />
                         </div>
                         <div className="mb-4">
                             <label htmlFor="subject" className="block text-slate-400 font-semibold mb-2">Subject</label>
-                            <input type="text" id="subject" name="subject" className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" required />
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" 
+                                required 
+                            />
                         </div>
                         <div className="mb-6">
                             <label htmlFor="message" className="block text-slate-400 font-semibold mb-2">Message</label>
-                            <textarea id="message" name="message" rows={5} className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" required></textarea>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows={5} 
+                                className="w-full px-4 py-2 bg-slate-900 border border-slate-600 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500 text-white" 
+                                required
+                            ></textarea>
                         </div>
-                        <button type="submit" className="w-full bg-gradient-to-r from-purple-600 to-teal-600 text-white font-bold py-3 px-6 rounded-lg hover:from-purple-500 hover:to-teal-500 transition-all shadow-lg">Transmit Message</button>
+                        {/* Add a honeypot field to help prevent spam */}
+                        <input type="text" name="_gotcha" className="hidden" />
+                        <button 
+                            type="submit" 
+                            className="w-full bg-gradient-to-r from-purple-600 to-teal-600 text-white font-bold py-3 px-6 rounded-lg hover:from-purple-500 hover:to-teal-500 transition-all shadow-lg"
+                        >
+                            Transmit Message
+                        </button>
                     </form>
                 </div>
             </div>

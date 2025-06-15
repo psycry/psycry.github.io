@@ -12,6 +12,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/nodemailer": "^6.4.17",
+    "cors": "^2.8.5",
+    "nodemailer": "^7.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
