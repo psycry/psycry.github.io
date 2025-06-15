@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { useState } from 'react';
 import FAQItem from '../components/FAQItem';
 
 const ContactPage: React.FC = () => (
