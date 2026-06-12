@@ -12,18 +12,16 @@ const AboutPage: React.FC = () => (
         <section className="py-12 bg-slate-800/50">
             <div className="container mx-auto px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold text-white">Our Ethos</h1>
-                <p className="text-lg text-slate-400 mt-4 max-w-3xl mx-auto">We're not just a company; we're a collective of creators living the life we advocate. Freedom, mastery, and adventure are coded into everything we do.</p>
+                <p className="text-lg text-slate-400 mt-4 max-w-3xl mx-auto">We are a team of experienced software engineers and consultants dedicated to building high-quality, scalable digital solutions. Excellence, collaboration, and efficiency are at the core of our work.</p>
             </div>
         </section>
 
         <section className="py-20">
             <div className="container mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-teal-400">Founded in Motion</h2>
+                    <h2 className="text-3xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-teal-400">Engineering Excellence</h2>
                     <p className="text-slate-300 leading-relaxed">
-                        Digital Nomad LLC wasn't conceived in a boardroom. It was founded from a shared passion for technology and a life unbound by convention.
-                        We are run by nomads, for nomads. We’ve coded from bustling city cafes and lived the challenges building the solutions that make this lifestyle sustainable and rewarding.
-                        Our passion is code and bringing ideas to reality.
+                        Digital Nomad LLC was founded on a passion for building software that solves real-world business challenges. Our team brings deep technical expertise in custom development, cloud architecture, and strategic consulting. We pride ourselves on creating reliable, scalable products and helping organizations modernise their technology stacks.
                     </p>
                 </div>
                 {/*<div>*/}

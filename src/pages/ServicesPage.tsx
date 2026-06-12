@@ -10,7 +10,7 @@ const ServicesPage: React.FC = () => (
         <section className="py-12 bg-slate-800/50">
             <div className="container mx-auto px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold text-white">Services</h1>
-                <p className="text-lg text-slate-400 mt-4 max-w-3xl mx-auto">Your journey to digital freedom requires the right tools and a solid strategy. We provide both.</p>
+                <p className="text-lg text-slate-400 mt-4 max-w-3xl mx-auto">Accelerate your business with custom software development and expert technical consulting.</p>
             </div>
         </section>
 
@@ -19,12 +19,12 @@ const ServicesPage: React.FC = () => (
                 <div className="grid md:grid-cols-2 gap-16 items-center mb-20">
                     <div>
                         <h2 className="text-3xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-purple-500">Custom Applications</h2>
-                        <p className="text-slate-300 leading-relaxed mb-6">Your digital presence is your home base. We build fast, secure, and beautiful platforms that automate your work so you can focus on living.</p>
+                        <p className="text-slate-300 leading-relaxed mb-6">We design and build modern, performant, and secure web and mobile applications that optimize workflows and engage users.</p>
                         <ul className="space-y-3 text-slate-300">
-                            <li className="flex items-center"><span className="text-purple-400 mr-3 text-xl">&rarr;</span>Personal Branding & Portfolio Sites</li>
-                            <li className="flex items-center"><span className="text-purple-400 mr-3 text-xl">&rarr;</span>Automated E-commerce & Service Platforms</li>
-                            <li className="flex items-center"><span className="text-purple-400 mr-3 text-xl">&rarr;</span>Custom Productivity & Workflow Tools</li>
-                            <li className="flex items-center"><span className="text-purple-400 mr-3 text-xl">&rarr;</span>API Integrations to streamline your business</li>
+                            <li className="flex items-center"><span className="text-purple-400 mr-3 text-xl">&rarr;</span>Web & Mobile App Development</li>
+                            <li className="flex items-center"><span className="text-purple-400 mr-3 text-xl">&rarr;</span>Automated Business Platforms & E-Commerce</li>
+                            <li className="flex items-center"><span className="text-purple-400 mr-3 text-xl">&rarr;</span>Custom Enterprise Tools & Workflow Automation</li>
+                            <li className="flex items-center"><span className="text-purple-400 mr-3 text-xl">&rarr;</span>Seamless Third-Party & API Integrations</li>
                         </ul>
                     </div>
                     {/*<div className="order-2 md:order-1">*/}
@@ -32,12 +32,12 @@ const ServicesPage: React.FC = () => (
                     {/*</div>*/}
                     <div className="order-1 md:order-2">
                         <h2 className="text-3xl font-bold text-white mb-4 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-teal-500">Consulting</h2>
-                        <p className="text-slate-300 leading-relaxed mb-6">An idea is not enough. We provide the roadmap to turn your idea into a reality.</p>
+                        <p className="text-slate-300 leading-relaxed mb-6">We help you define your technical roadmap, choose the right tech stack, and optimize your engineering processes.</p>
                         <ul className="space-y-3 text-slate-300">
-                            <li className="flex items-center"><span className="text-teal-400 mr-3 text-xl">&rarr;</span>Tech Stack & Tooling Advisory</li>
-                            <li className="flex items-center"><span className="text-teal-400 mr-3 text-xl">&rarr;</span>Finding & Securing Remote-First Work</li>
-                            <li className="flex items-center"><span className="text-teal-400 mr-3 text-xl">&rarr;</span>Online Business & Freelance Structuring</li>
-                            <li className="flex items-center"><span className="text-teal-400 mr-3 text-xl">&rarr;</span>Productivity Systems for Asynchronous Work</li>
+                            <li className="flex items-center"><span className="text-teal-400 mr-3 text-xl">&rarr;</span>Software Architecture & Tech Stack Advisory</li>
+                            <li className="flex items-center"><span className="text-teal-400 mr-3 text-xl">&rarr;</span>Cloud Strategy & Performance Optimization</li>
+                            <li className="flex items-center"><span className="text-teal-400 mr-3 text-xl">&rarr;</span>Business Process & Workflow Consulting</li>
+                            <li className="flex items-center"><span className="text-teal-400 mr-3 text-xl">&rarr;</span>Legacy System Modernization Roadmap</li>
                         </ul>
                     </div>
                     {/*<div>*/}

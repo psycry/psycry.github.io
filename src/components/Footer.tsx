@@ -7,7 +7,7 @@ const Footer: React.FC = () => (
             <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
                 <div className="mb-6 md:mb-0">
                     <Logo />
-                    <p className="text-slate-500 mt-2">Engineer Your Freedom. Live Unbound.</p>
+                    <p className="text-slate-500 mt-2">Engineering Excellence. Strategic Consulting.</p>
                 </div>
                 <div className="flex space-x-6 text-slate-400">
                     <a href="#home" className="hover:text-teal-400 transition-colors">Home</a>
